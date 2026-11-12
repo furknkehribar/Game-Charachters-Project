@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Ol veya Giriş Yap</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input  [type="submit"] input [type="reset"] {
+            width: calc(50% - 5px);
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input:hover {
+            background-color: rgb(158, 162, 210);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(158, 162, 210);">
+    <form action="">
+        <h2>Üye Ol veya Giriş Yap</h2>
+
+        <label for="isim">Ad:</label>
+        <input type="text" name="isim" id="isim" placeholder="Adınızı Giriniz" required>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" name="soyad" id="soyad" placeholder="Soyadınızı Giriniz" required>
+
+        <label for="email">E-Posta Giriniz:</label>
+        <input type="email" name="email" id="email" placeholder="E-posta Adresinizi Giriniz" required>
+
+        <label for="telefon">Telefon Numaranızı Giriniz:</label>
+        <input type="tel" name="telefon" id="telefon" placeholder="Telefon Numaranızı Giriniz" required>
+
+        <label for="tarih">Doğum Tarihi Giriniz:</label>
+        <input type="date" name="tarih" id="tarih" required>
+
+        <label for="cinsiyet">Cinsiyet Giriniz:</label>
+        <label for="kadın">
+            <input type="radio" name="cinsiyet" id="kadın" value="kadın" required>
+            Kadın
+        </label>
+        <label for="erkek">
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+            Erkek
+        </label>
+
+        <label for="ogrenim_durumu">Öğrenim Durumu:</label>
+        <select name="ogrenim_durumu" id="ogrenim_durumu" required>
+            <option value="">Seçiniz</option>
+            <option value="ilkokul">İlkokul</option>
+            <option value="ortaokul">Ortaokul</option>
+            <option value="lise">Lise</option>
+            <option value="onlisans">Önlisans</option>
+            <option value="lisans">Lisans</option>
+            <option value="doktora">Doktora</option>
+        </select>
+
+        <input type="reset" value="Temizle">
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>

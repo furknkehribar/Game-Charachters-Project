@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+
+.navbar{
+	height: 8vh;
+	width: 100%;
+	background-color: rgb(109, 111, 143);
+	display: flex;
+	color: whitesmoke;
+	align-items: center;
+	justify-content: space-around;
+	border: 10px;
+}
+
+h2{
+	cursor: pointer;
+	transition: 0.8;
+}
+
+a:hover {
+	color: rgb(158, 162, 210);
+}
+
+h2:hover{
+	color: rgb(158, 162, 210);
+}
+
